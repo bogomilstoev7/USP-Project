@@ -1,19 +1,20 @@
 ﻿
-
 ✔️ pie chart 
 ✔️ column chart x2
-- to clean up the code
-
-
-
-- da se sloji nqkude buton za populate cars methoda.
+✔️ to clean up the code
 
 [?]- propertyto na Car da se preimenuva ot PriceForRepair -> Price
+     *ne sym sig dali e podhodqshto ime?
+    
+-da se sloji nqkude buton za populate cars methoda + da se populate-nat s po-raznoobrazni danni, za da moje v statistikite da e po-dobre izglejdashto
 
-- da optimiziram turseneto, shtoto kato napisha da tursi Make "bmw" ili "bm" i to ne namira kolite koito sa "BMW"
-
--butonchetata v Dashboard imat gaden cvqt;
+-da optimiziram turseneto, shtoto kato napisha da tursi Make "bmw" ili "bm" i to ne namira kolite koito sa "BMW"
 
 -struva mi se che CreateCarTable() methoda bi trqbvalo da ima usage nqkude, shtoto v momenta nikude ne se polzva a vsichko si bachka ok :D
  *moje bi ako nqmahme baza danni i trqbvashe da se suzdade tablicata Car nanovo, togava shtqhme da go polzvame. 
   => pri chovek bez Database.db file-a nqma da trugne celiqt proekt bez tozi method.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+-da se promeni cveta na butonchetata v Dashboard che imat gaden cvqt 
+

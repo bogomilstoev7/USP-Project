@@ -15,6 +15,7 @@
         public FormDashboard()
         {
             InitializeComponent();
+            chart1.Series.Clear();
         }
 
         // Car Price Statistics
@@ -110,7 +111,7 @@
                 { "Before 2000", 0 },
                 { "2000-2010", 0 },
                 { "2011-2020", 0 },
-                { "2020+", 0 }
+                { "After 2020", 0 }
             };
 
             foreach (Car car in allCars)
@@ -129,7 +130,7 @@
                 }
                 else
                 {
-                    carYearCounts["2020+"]++;
+                    carYearCounts["After 2020"]++;
                 }
             }
 
