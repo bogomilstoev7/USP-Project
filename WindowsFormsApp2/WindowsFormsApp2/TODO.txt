@@ -6,7 +6,10 @@
 [?]- propertyto na Car da se preimenuva ot PriceForRepair -> Price
      *ne sym sig dali e podhodqshto ime?
     
--da se sloji nqkude buton za populate cars methoda + da se populate-nat s po-raznoobrazni danni, za da moje v statistikite da e po-dobre izglejdashto
+-da se sloji nqkude buton za populate cars methoda (ot TODO2.txt) 
+ + da se populate-nat s po-raznoobrazni danni, za da moje v statistikite da e po-dobre izglejdashto
+
+-da se sloji nqkude buton za delete all cars methoda (ot TODO2.txt)
 
 -da optimiziram turseneto, shtoto kato napisha da tursi Make "bmw" ili "bm" i to ne namira kolite koito sa "BMW"
 
