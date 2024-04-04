@@ -14,3 +14,6 @@
 
 -butonchetata v Dashboard imat gaden cvqt;
 
+-struva mi se che CreateCarTable() methoda bi trqbvalo da ima usage nqkude, shtoto v momenta nikude ne se polzva a vsichko si bachka ok :D
+ *moje bi ako nqmahme baza danni i trqbvashe da se suzdade tablicata Car nanovo, togava shtqhme da go polzvame. 
+  => pri chovek bez Database.db file-a nqma da trugne celiqt proekt bez tozi method.

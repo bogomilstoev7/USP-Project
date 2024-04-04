@@ -3,12 +3,10 @@
     using System;
     using System.Collections.Generic;
     using System.Drawing;
-    using System.Linq;
-    using System.Runtime.InteropServices;
     using System.Windows.Forms;
     using Database;
     using Entities;
-    using FontAwesome.Sharp;
+
     public partial class FormAddCar : Form
     {
         private readonly DataAccess dataAccess = new DataAccess();
@@ -82,9 +80,8 @@
                 column.DefaultCellStyle.ForeColor = Color.Black;
                 column.MinimumWidth = 150;
             }
-
         }
-        // Display all cars
+
         private void DisplayAllCars()
         {
             List<Car> allCars = dataAccess.GetAllCars();
