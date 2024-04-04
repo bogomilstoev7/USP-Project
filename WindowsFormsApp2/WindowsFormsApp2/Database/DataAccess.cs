@@ -9,8 +9,9 @@
     public class DataAccess
     {
         private readonly string connectionString =
-            "Data Source=C:\\Users\\vasil\\Desktop\\USP-Project-main\\WindowsFormsApp2\\Database.db;Version=3;";
-
+            "Data Source=C:\\Users\\wavepc\\Documents\\My Git Repos\\USP-Project\\WindowsFormsApp2\\Database.db;Version=3;";
+        //"Data Source=C:\\Users\\vasil\\Desktop\\USP-Project-main\\WindowsFormsApp2\\Database.db;Version=3;";
+        
 
         public void CreateCarTable()
         {
@@ -292,5 +293,68 @@
 
             return result.ToString();
         }
+
+
+        //public List<int> GetCarPrices()
+        //{
+        //    List<int> carPrices = new List<int>();
+
+        //    using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        //    {
+        //        connection.Open();
+
+        //        string query = "SELECT PriceForRepairing FROM Car"; // Adjust table and column names accordingly
+        //        using (SQLiteCommand command = new SQLiteCommand(query, connection))
+        //        {
+        //            using (SQLiteDataReader reader = command.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    int price = reader.GetInt32(0); // Assuming the price is stored as an integer in the database
+        //                    carPrices.Add(price);
+        //                }
+        //            }
+        //        }
+
+        //        connection.Close();
+        //    }
+
+        //    return carPrices;
+        //}
+
+        public List<double> GetCarPrices()
+        {
+            List<double> carPrices = new List<double>();
+
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT PriceForRepairing FROM Car"; // Adjust table and column names accordingly
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            if (!reader.IsDBNull(0)) // Check for null values
+                            {
+                                double price = reader.GetDouble(0); // Assuming the price is stored as a double in the database
+                                carPrices.Add(price);
+                            }
+                        }
+                    }
+                }
+
+                connection.Close();
+            }
+
+            return carPrices;
+        }
+
+
     }
 }
+
+
+

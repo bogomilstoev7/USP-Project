@@ -1,0 +1,16 @@
+﻿
+
+✔️ pie chart 
+✔️ column chart x2
+- to clean up the code
+
+
+
+- da se sloji nqkude buton za populate cars methoda.
+
+[?]- propertyto na Car da se preimenuva ot PriceForRepair -> Price
+
+- da optimiziram turseneto, shtoto kato napisha da tursi Make "bmw" ili "bm" i to ne namira kolite koito sa "BMW"
+
+-butonchetata v Dashboard imat gaden cvqt;
+

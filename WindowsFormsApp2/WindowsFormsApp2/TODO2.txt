@@ -1,0 +1,54 @@
+﻿
+
+private void btnPopulateCars_Click(object sender, EventArgs e)
+{
+    // Populate with 30 example cars
+
+    Random rnd = new Random();
+    string[] randomMakes =
+        { "Toyota", "Ford", "VW", "Honda", "Nissan", "Mercedes-Benz", "BMW", "Audi", "Porsche", "Mazda" };
+    string[] randomModels =
+    {
+        "M5", "Focus", "Civic", "A3", "Corolla", "Accord", "Golf", "Passat", "E90", "Auris", "Panamera", "F10"
+    };
+    string[] randomColors = { "Red", "Blue", "White", "Black", "Silver", "Gray" };
+
+    for (int i = 0; i < 30; i++)
+    {
+        Car randomCar = new Car
+        {
+            LicensePlate = "RA " + rnd.Next(1000, 9999) + " ND",
+            Model = randomModels[rnd.Next(randomModels.Length)],
+            Make = randomMakes[rnd.Next(randomMakes.Length)],
+            Color = randomColors[rnd.Next(randomColors.Length)],
+            Year = rnd.Next(1996, 2024),
+            Seats = rnd.Next(2, 8),
+            PriceForRepairing = rnd.Next(100, 20000)
+        };
+        dataAccess.CreateCar(randomCar);
+    }
+
+
+    MessageBox.Show("30 example cars populated successfully!");
+    DisplayAllCars();
+}
+
+
+
+
+
+
+
+
+private void btnDeleteAllCars_Click(object sender, EventArgs e)
+{
+    DialogResult result = MessageBox.Show("Are you sure you want to delete all cars?", "Confirm",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+    if (result == DialogResult.Yes)
+    {
+        dataAccess.DeleteAllCars();
+        DisplayAllCars();
+    }
+}
+
