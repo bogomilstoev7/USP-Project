@@ -1,10 +1,13 @@
 ﻿namespace WindowsFormsApp2
 {
     using System;
+    using System.Collections.Generic;
     using System.Drawing;
     using System.Runtime.InteropServices;
     using System.Windows.Forms;
     using FontAwesome.Sharp;
+    using WindowsFormsApp2.Database;
+    using WindowsFormsApp2.Entities;
 
     public partial class frmCar : Form
     {
@@ -12,6 +15,8 @@
 
         private IconButton currentBtn;
         private Form currentChildForm;
+
+        private readonly DataAccess dataAccess = new DataAccess();
 
         public frmCar()
         {
@@ -170,5 +175,50 @@
             else
                 FormBorderStyle = FormBorderStyle.Sizable;
         }
+
+        
+        // Populate with 30 example cars
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Random rnd = new Random();
+            string[] randomMakes =
+                { "Toyota", "Ford", "VW", "Honda", "Nissan", "Mercedes-Benz", "BMW", "Audi", "Porsche", "Mazda" };
+            string[] randomModels =
+            {
+                "M5", "Focus", "Civic", "A3", "Corolla", "Accord", "Golf", "Passat", "E90", "Auris", "Panamera", "F10"
+            };
+            string[] randomColors = { "Red", "Blue", "White", "Black", "Silver", "Gray" };
+
+            for (int i = 0; i < 30; i++)
+            {
+                Car randomCar = new Car
+                {
+                    LicensePlate = "RA " + rnd.Next(1000, 9999) + " ND",
+                    Model = randomModels[rnd.Next(randomModels.Length)],
+                    Make = randomMakes[rnd.Next(randomMakes.Length)],
+                    Color = randomColors[rnd.Next(randomColors.Length)],
+                    Year = rnd.Next(1996, 2024),
+                    Seats = rnd.Next(2, 8),
+                    PriceForRepairing = rnd.Next(100, 25000)
+                };
+                dataAccess.CreateCar(randomCar);
+            }
+
+            MessageBox.Show("30 example cars populated successfully!");
+        }
+
+        // Delete All Cars Button
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to delete all cars?", "Confirm",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                dataAccess.DeleteAllCars();
+            }
+        }
+
     }
 }

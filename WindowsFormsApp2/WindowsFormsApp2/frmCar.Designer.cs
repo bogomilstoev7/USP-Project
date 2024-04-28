@@ -45,10 +45,12 @@
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -82,7 +84,7 @@
             this.btnMenuDelete.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuDelete.FlatAppearance.BorderSize = 0;
             this.btnMenuDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuDelete.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenuDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMenuDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
             this.btnMenuDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnMenuDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -105,7 +107,7 @@
             this.btnMenuUpdate.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuUpdate.FlatAppearance.BorderSize = 0;
             this.btnMenuUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuUpdate.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenuUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMenuUpdate.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
             this.btnMenuUpdate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnMenuUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -128,7 +130,7 @@
             this.btnMenuAdd.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuAdd.FlatAppearance.BorderSize = 0;
             this.btnMenuAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuAdd.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenuAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMenuAdd.IconChar = FontAwesome.Sharp.IconChar.Add;
             this.btnMenuAdd.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnMenuAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -151,7 +153,7 @@
             this.btnMenuSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenuSearch.FlatAppearance.BorderSize = 0;
             this.btnMenuSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuSearch.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenuSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnMenuSearch.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnMenuSearch.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnMenuSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -174,7 +176,7 @@
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
             this.btnDashboard.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -206,7 +208,7 @@
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnHome.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -289,10 +291,10 @@
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Roboto Mono Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitleChildForm.Location = new System.Drawing.Point(69, 33);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(54, 21);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(56, 20);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -313,6 +315,8 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
+            this.panelDesktop.Controls.Add(this.button2);
+            this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Controls.Add(this.label4);
             this.panelDesktop.Controls.Add(this.label3);
             this.panelDesktop.Controls.Add(this.label2);
@@ -323,45 +327,67 @@
             this.panelDesktop.Size = new System.Drawing.Size(843, 556);
             this.panelDesktop.TabIndex = 27;
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Mono Medium", 7F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(23, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "<- Search for a car";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Mono Medium", 7F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(23, 170);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "<- Add a car to the database";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(23, 239);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(200, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "<- Update a car from the database";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto Mono Medium", 7F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(23, 308);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 13);
+            this.label3.Size = new System.Drawing.Size(197, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "<- Delete a car from the database";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto Mono Medium", 7F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(23, 239);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(238, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "<- Update a car from the database";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(23, 170);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(169, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "<- Add a car to the database";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(23, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "<- Search for a car";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(440, 372);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 86);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Populate With Random Cars";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(637, 376);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(172, 82);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Delete All Cars";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmCar
             // 
@@ -407,5 +433,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
