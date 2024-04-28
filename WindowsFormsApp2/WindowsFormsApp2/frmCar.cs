@@ -1,22 +1,20 @@
 ﻿namespace WindowsFormsApp2
 {
     using System;
-    using System.Collections.Generic;
     using System.Drawing;
     using System.Runtime.InteropServices;
     using System.Windows.Forms;
+    using Database;
+    using Entities;
     using FontAwesome.Sharp;
-    using WindowsFormsApp2.Database;
-    using WindowsFormsApp2.Entities;
 
     public partial class frmCar : Form
     {
+        private readonly DataAccess dataAccess = new DataAccess();
         private readonly Panel leftBorderBtn;
 
         private IconButton currentBtn;
         private Form currentChildForm;
-
-        private readonly DataAccess dataAccess = new DataAccess();
 
         public frmCar()
         {
@@ -176,11 +174,10 @@
                 FormBorderStyle = FormBorderStyle.Sizable;
         }
 
-        
+
         // Populate with 30 example cars
         private void button1_Click(object sender, EventArgs e)
         {
-
             Random rnd = new Random();
             string[] randomMakes =
                 { "Toyota", "Ford", "VW", "Honda", "Nissan", "Mercedes-Benz", "BMW", "Audi", "Porsche", "Mazda" };
@@ -219,6 +216,5 @@
                 dataAccess.DeleteAllCars();
             }
         }
-
     }
 }
