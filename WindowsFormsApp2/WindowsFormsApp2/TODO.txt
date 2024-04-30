@@ -1,9 +1,6 @@
 ﻿
-✔️ da se sloji nqkude buton za populate cars methoda (ot TODO2.txt) 
-   + da se populate-nat s po-raznoobrazni danni, za da moje v statistikite da e po-dobre izglejdashto
 
-✔️ da se sloji nqkude buton za delete all cars methoda (ot TODO2.txt)
-
+✔️ statistikite v dasboarda da gi napravq da izlizat i trite navednuj bez butoni
 
 [X] da se promeni cveta na butonchetata v Dashboard che imat gaden cvqt 
 
