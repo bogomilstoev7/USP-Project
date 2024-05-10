@@ -40,7 +40,7 @@
                 DisableButton();
                 // Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(49, 54, 63);
+                currentBtn.BackColor = Color.FromArgb(0, 102, 102);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -53,7 +53,7 @@
                 leftBorderBtn.BringToFront();
                 // Current Child Form Icon
                 iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = Color.FromArgb(118, 171, 174);
+                iconCurrentChildForm.IconColor = Color.FromArgb(178, 216, 216);
             }
         }
 
@@ -61,10 +61,10 @@
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(34, 40, 49);
-                currentBtn.ForeColor = Color.FromArgb(238, 238, 238);
+                currentBtn.BackColor = Color.FromArgb(0, 76, 76);
+                currentBtn.ForeColor = Color.FromArgb(178, 216, 216);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.FromArgb(238, 238, 238);
+                currentBtn.IconColor = Color.FromArgb(178, 216, 216);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -101,7 +101,7 @@
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.FromArgb(118, 171, 174);
+            iconCurrentChildForm.IconColor = Color.FromArgb(178, 216, 216);
             lblTitleChildForm.Text = "Home";
         }
 
@@ -120,31 +120,31 @@
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(118, 171, 174));
+            ActivateButton(sender, Color.FromArgb(178, 216, 216));
             OpenChildForm(new FormDashboard());
         }
 
         private void btnMenuAdd_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(118, 171, 174));
+            ActivateButton(sender, Color.FromArgb(178, 216, 216));
             OpenChildForm(new FormAddCar());
         }
 
         private void btnMenuDelete_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(118, 171, 174));
+            ActivateButton(sender, Color.FromArgb(178, 216, 216));
             OpenChildForm(new FormDeleteCar());
         }
 
         private void btnMenuUpdate_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(118, 171, 174));
+            ActivateButton(sender, Color.FromArgb(178, 216, 216));
             OpenChildForm(new FormUpdateCar());
         }
 
         private void btnMenuSearch_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.FromArgb(118, 171, 174));
+            ActivateButton(sender, Color.FromArgb(178, 216, 216));
             OpenChildForm(new FormSearchCar());
         }
 

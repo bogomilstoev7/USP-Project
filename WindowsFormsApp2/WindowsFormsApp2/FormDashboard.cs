@@ -55,6 +55,7 @@
 
             Series series = new Series("Car Prices");
             series.ChartType = SeriesChartType.Column;
+            series.Color = Color.FromArgb(102, 178, 178); // Set bar color
 
             foreach (KeyValuePair<string, double> entry in carCounts)
             {
@@ -62,6 +63,43 @@
             }
 
             chart1.Series.Add(series);
+
+            // Set background and border colors
+            chart1.ChartAreas[0].BackColor = Color.Transparent;
+            chart1.ChartAreas[0].BorderColor = Color.FromArgb(0, 128, 128); // Border color
+
+            // Set grid lines to specific color
+            var chartArea = chart1.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.LineColor = Color.FromArgb(178, 216, 216); // Horizontal major grid lines
+            chartArea.AxisY.MajorGrid.LineColor = Color.FromArgb(178, 216, 216); // Vertical major grid lines
+
+            chartArea.AxisX.LineColor = Color.FromArgb(178, 216, 216); // X-axis line color
+            chartArea.AxisY.LineColor = Color.FromArgb(178, 216, 216); // Y-axis line color
+
+            chartArea.AxisY.MajorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MajorY tick marks
+            chartArea.AxisY.MinorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MinorY tick marks
+
+            chartArea.AxisX.MajorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MajorX tick marks
+            chartArea.AxisX.MinorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MinorX tick marks
+
+            chart1.BorderColor = Color.FromArgb(178, 216, 216); // Change the outer border color
+            chart1.BorderlineWidth = 2; // Optionally, adjust the width of the border
+            chart1.BorderlineDashStyle = ChartDashStyle.Solid; // You can choose the dash style
+
+            // Set series label font and color
+            series.Font = new Font("Arial", 10f, FontStyle.Bold);
+            series.LabelForeColor = Color.FromArgb(0, 76, 76);
+
+            // Set axis label colors
+            chartArea.AxisX.LabelStyle.ForeColor = Color.FromArgb(178, 216, 216); // X-axis label color
+            chartArea.AxisY.LabelStyle.ForeColor = Color.FromArgb(178, 216, 216); // Y-axis label color
+
+            // Configure legends
+            foreach (var legend in chart1.Legends)
+            {
+                legend.BackColor = Color.FromArgb(178, 216, 216); // Legend background color
+                legend.ForeColor = Color.FromArgb(0, 76, 76);     // Legend text color
+            }
 
             chart1.Invalidate();
         }
@@ -100,6 +138,23 @@
             }
 
             chart2.Series.Add(series);
+
+            // Change the chart background color to RGB(0, 76, 76)
+            chart2.ChartAreas[0].BackColor = Color.FromArgb(0, 76, 76);
+
+            // Change the legend background and foreground colors
+            if (chart2.Legends.Count > 0)
+            {
+                foreach (var legend in chart2.Legends)
+                {
+                    legend.BackColor = Color.FromArgb(178, 216, 216); // Set legend background color
+                    legend.ForeColor = Color.FromArgb(0, 76, 76);     // Set legend foreground color
+                }
+            }
+
+            chart2.BorderColor = Color.FromArgb(178, 216, 216); // Change the outer border color
+            chart2.BorderlineWidth = 2; // Optionally, adjust the width of the border
+            chart2.BorderlineDashStyle = ChartDashStyle.Solid; // You can choose the dash style
 
             chart2.Invalidate();
         }
@@ -141,6 +196,7 @@
 
             Series series = new Series("Car Year");
             series.ChartType = SeriesChartType.Column;
+            series.Color = Color.FromArgb(102, 178, 178);
 
 
             foreach (KeyValuePair<string, int> entry in carYearCounts)
@@ -151,10 +207,51 @@
             chart3.Series.Add(series);
 
             chart3.ChartAreas[0].BackColor = Color.Transparent;
-            chart3.ChartAreas[0].BorderColor = Color.White;
+            chart3.ChartAreas[0].BorderColor = Color.FromArgb(0, 128, 128);
 
-            chart3.Series["Car Year"].LabelForeColor = Color.Black;
-            chart3.Series["Car Year"].Font = new Font("Arial", 10f, FontStyle.Bold);
+            var chartArea = chart3.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.LineColor = Color.FromArgb(178, 216, 216); // Horizontal major grid lines
+            chartArea.AxisY.MajorGrid.LineColor = Color.FromArgb(178, 216, 216); // Vertical major grid lines
+
+            chartArea.AxisX.MinorGrid.LineColor = Color.FromArgb(178, 216, 216); // Horizontal minor grid lines
+            chartArea.AxisY.MinorGrid.LineColor = Color.FromArgb(178, 216, 216); // Vertical minor grid lines
+
+            chartArea.AxisX.LineColor = Color.FromArgb(178, 216, 216); // X-axis line color
+            chartArea.AxisY.LineColor = Color.FromArgb(178, 216, 216); // Y-axis line color
+
+            chartArea.AxisY.MajorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MajorY tick marks
+            chartArea.AxisY.MinorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MinorY tick marks
+
+            chartArea.AxisX.MajorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MajorX tick marks
+            chartArea.AxisX.MinorTickMark.LineColor = Color.FromArgb(178, 216, 216); // MinorX tick marks
+
+
+            chart3.BorderColor = Color.FromArgb(178, 216, 216); // Change the outer border color
+            chart3.BorderlineWidth = 2; // Optionally, adjust the width of the border
+            chart3.BorderlineDashStyle = ChartDashStyle.Solid; // You can choose the dash style
+
+            series.Font = new Font("Arial", 10f, FontStyle.Bold);
+            series.Font = new Font("Arial", 10f, FontStyle.Bold); // Adjust font as needed
+
+            chartArea.AxisX.LabelStyle.ForeColor = Color.FromArgb(178, 216, 216); // Axis X label color
+            chartArea.AxisY.LabelStyle.ForeColor = Color.FromArgb(178, 216, 216); // Axis Y label color
+
+            if (chart3.Legends.Count > 0)
+            {
+                foreach (var legend in chart3.Legends)
+                {
+                    legend.BackColor = Color.FromArgb(178, 216, 216); // Set legend background color
+                    legend.ForeColor = Color.FromArgb(0, 76, 76);     // Set legend text color
+                }
+            }
+
+            if (chart3.Legends.Count > 0)
+            {
+                foreach (var legend in chart3.Legends)
+                {
+                    legend.ForeColor = Color.FromArgb(0, 76, 76); // Legend text color
+                }
+            }
 
             chart3.Invalidate();
         }

@@ -51,11 +51,13 @@ namespace WindowsFormsApp2
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatAppearance.BorderSize = 2;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(72)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Roboto Mono Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(171)))), ((int)(((byte)(174)))));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
             this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnAdd.IconColor = System.Drawing.Color.Black;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -66,7 +68,7 @@ namespace WindowsFormsApp2
             this.btnAdd.Size = new System.Drawing.Size(160, 30);
             this.btnAdd.TabIndex = 78;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dataGridView1
@@ -81,6 +83,7 @@ namespace WindowsFormsApp2
             // 
             // txtColor
             // 
+            this.txtColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtColor.Location = new System.Drawing.Point(427, 135);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(160, 20);
@@ -88,6 +91,7 @@ namespace WindowsFormsApp2
             // 
             // txtLicensePlate
             // 
+            this.txtLicensePlate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtLicensePlate.Location = new System.Drawing.Point(242, 135);
             this.txtLicensePlate.Name = "txtLicensePlate";
             this.txtLicensePlate.Size = new System.Drawing.Size(160, 20);
@@ -95,6 +99,7 @@ namespace WindowsFormsApp2
             // 
             // txtModel
             // 
+            this.txtModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtModel.Location = new System.Drawing.Point(242, 65);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(160, 20);
@@ -102,6 +107,7 @@ namespace WindowsFormsApp2
             // 
             // txtMake
             // 
+            this.txtMake.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtMake.Location = new System.Drawing.Point(58, 65);
             this.txtMake.Name = "txtMake";
             this.txtMake.Size = new System.Drawing.Size(160, 20);
@@ -109,6 +115,7 @@ namespace WindowsFormsApp2
             // 
             // txtSeats
             // 
+            this.txtSeats.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtSeats.Location = new System.Drawing.Point(58, 135);
             this.txtSeats.Name = "txtSeats";
             this.txtSeats.Size = new System.Drawing.Size(160, 20);
@@ -116,6 +123,7 @@ namespace WindowsFormsApp2
             // 
             // txtYear
             // 
+            this.txtYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtYear.Location = new System.Drawing.Point(427, 65);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(160, 20);
@@ -163,6 +171,7 @@ namespace WindowsFormsApp2
             // 
             // txtPriceForRepairing
             // 
+            this.txtPriceForRepairing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.txtPriceForRepairing.Location = new System.Drawing.Point(58, 206);
             this.txtPriceForRepairing.Name = "txtPriceForRepairing";
             this.txtPriceForRepairing.Size = new System.Drawing.Size(160, 20);
@@ -182,6 +191,7 @@ namespace WindowsFormsApp2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Mono Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.label2.Location = new System.Drawing.Point(238, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 19);
@@ -191,7 +201,9 @@ namespace WindowsFormsApp2
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.label3.Font = new System.Drawing.Font("Roboto Mono Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.label3.Location = new System.Drawing.Point(54, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 19);
@@ -200,12 +212,14 @@ namespace WindowsFormsApp2
             // 
             // btnEmptyFields
             // 
-            this.btnEmptyFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
+            this.btnEmptyFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.btnEmptyFields.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEmptyFields.FlatAppearance.BorderSize = 0;
+            this.btnEmptyFields.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.btnEmptyFields.FlatAppearance.BorderSize = 2;
+            this.btnEmptyFields.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(72)))));
             this.btnEmptyFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmptyFields.Font = new System.Drawing.Font("Roboto Mono Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.btnEmptyFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
+            this.btnEmptyFields.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
             this.btnEmptyFields.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnEmptyFields.IconColor = System.Drawing.Color.Black;
             this.btnEmptyFields.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -222,7 +236,7 @@ namespace WindowsFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
             this.ClientSize = new System.Drawing.Size(1343, 671);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMake);
@@ -241,7 +255,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.txtPriceForRepairing);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAdd);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
             this.Name = "FormAddCar";
             this.Text = "Add";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
