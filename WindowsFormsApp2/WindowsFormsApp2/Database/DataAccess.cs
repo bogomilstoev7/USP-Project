@@ -9,7 +9,8 @@
     public class DataAccess
     {
         private readonly string connectionString =
-            "Data Source=C:\\Users\\vasil\\Desktop\\USP-Project-main\\WindowsFormsApp2\\Database.db;Version=3;";
+            "Data Source=C:\\Users\\wavepc\\Documents\\My Git Repos\\USP-Project\\WindowsFormsApp2\\Database.db;Version=3;";
+            //"Data Source=C:\\Users\\vasil\\Desktop\\USP-Project-main\\WindowsFormsApp2\\Database.db;Version=3;";
 
 
 
